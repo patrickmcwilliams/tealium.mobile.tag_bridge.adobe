@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4339FC1AFB6C410081EE93 /* TealiumLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4339FB1AFB6C410081EE93 /* TealiumLibrary.framework */; };
 		1A433A0E1AFB6E170081EE93 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A433A0B1AFB6E170081EE93 /* ADBMobileConfig.json */; };
 		1A433A0F1AFB6E170081EE93 /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A433A0C1AFB6E170081EE93 /* AdobeMobileLibrary.a */; };
 		1A433A131AFDAC480081EE93 /* TealiumADBMobileTagBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A433A121AFDAC480081EE93 /* TealiumADBMobileTagBridge.m */; };
 		1A6ECA611B0BE68E0083E8DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6ECA601B0BE68E0083E8DD /* CoreLocation.framework */; };
+		1A6ECA881B0CFD520083E8DD /* libTealiumLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6ECA7F1B0CFCDB0083E8DD /* libTealiumLibrary.a */; };
 		3E1D56F2194F68F600D8298E /* AAPLSearchControllerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D56F1194F68F600D8298E /* AAPLSearchControllerBaseViewController.m */; };
 		3E1D56F5194F6BBD00D8298E /* AAPLSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1D56F4194F6BBD00D8298E /* AAPLSearchResultsViewController.m */; };
 		3E73CE46193318F7000F43D0 /* AAPLAlertControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E73CE45193318F7000F43D0 /* AAPLAlertControllerViewController.m */; };
@@ -50,8 +50,45 @@
 		E79415581A07D7AF003DADC9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E79415571A07D7AF003DADC9 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1A6ECA7E1B0CFCDB0083E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 71E37F1719E25DE700DFC70E;
+			remoteInfo = TealiumFrameworkGenerator;
+		};
+		1A6ECA801B0CFCDB0083E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 71E37F2219E25DE800DFC70E;
+			remoteInfo = TealiumFrameworkGeneratorTests;
+		};
+		1A6ECA821B0CFCDB0083E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 71E3801619E26C4300DFC70E;
+			remoteInfo = TealiumFrameworkGenerator_Compact;
+		};
+		1A6ECA841B0CFCDB0083E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 71E3802019E26C4300DFC70E;
+			remoteInfo = TealiumFrameworkGenerator_CompactTests;
+		};
+		1A6ECA861B0CFD270083E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E37F1619E25DE700DFC70E;
+			remoteInfo = TealiumFrameworkGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1A4339FB1AFB6C410081EE93 /* TealiumLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TealiumLibrary.framework; sourceTree = "<group>"; };
 		1A433A0A1AFB6E170081EE93 /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
 		1A433A0B1AFB6E170081EE93 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
 		1A433A0C1AFB6E170081EE93 /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
@@ -59,6 +96,7 @@
 		1A433A111AFDAC480081EE93 /* TealiumADBMobileTagBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumADBMobileTagBridge.h; sourceTree = "<group>"; };
 		1A433A121AFDAC480081EE93 /* TealiumADBMobileTagBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumADBMobileTagBridge.m; sourceTree = "<group>"; };
 		1A6ECA601B0BE68E0083E8DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TealiumFrameworkGenerator.xcodeproj; path = "../../../../../ios-library-builder/TealiumFrameworkGenerator/TealiumFrameworkGenerator.xcodeproj"; sourceTree = "<group>"; };
 		3E1D56F0194F68F600D8298E /* AAPLSearchControllerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSearchControllerBaseViewController.h; sourceTree = "<group>"; };
 		3E1D56F1194F68F600D8298E /* AAPLSearchControllerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLSearchControllerBaseViewController.m; sourceTree = "<group>"; };
 		3E1D56F3194F6BBD00D8298E /* AAPLSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSearchResultsViewController.h; sourceTree = "<group>"; };
@@ -126,7 +164,6 @@
 		E75FC73A19E33EEE00E8133C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E7645EB71A41E6D40026678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7645EB81A41E6D40026678D /* Modules_UICatelog_Full_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Modules_UICatelog_Full_Tests.m; sourceTree = "<group>"; };
-		E7645EBF1A41E7180026678D /* TealiumADBMobileTagBridge_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TealiumADBMobileTagBridge_Tests.m; sourceTree = "<group>"; };
 		E79415571A07D7AF003DADC9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -135,8 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6ECA881B0CFD520083E8DD /* libTealiumLibrary.a in Frameworks */,
 				1A6ECA611B0BE68E0083E8DD /* CoreLocation.framework in Frameworks */,
-				1A4339FC1AFB6C410081EE93 /* TealiumLibrary.framework in Frameworks */,
 				E79415581A07D7AF003DADC9 /* libsqlite3.dylib in Frameworks */,
 				1A433A0F1AFB6E170081EE93 /* AdobeMobileLibrary.a in Frameworks */,
 				E75FC73B19E33EEE00E8133C /* SystemConfiguration.framework in Frameworks */,
@@ -159,6 +196,17 @@
 			);
 			name = AdobeMobileLibrary;
 			path = ../../AdobeMobileLibrary;
+			sourceTree = "<group>";
+		};
+		1A6ECA751B0CFCDB0083E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A6ECA7F1B0CFCDB0083E8DD /* libTealiumLibrary.a */,
+				1A6ECA811B0CFCDB0083E8DD /* TealiumFrameworkGeneratorTests.xctest */,
+				1A6ECA831B0CFCDB0083E8DD /* libTealiumLibrary.a */,
+				1A6ECA851B0CFCDB0083E8DD /* TealiumFrameworkGenerator_CompactTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3E1D56EB194F5FBA00D8298E /* Search */ = {
@@ -222,6 +270,7 @@
 		5356823118F3656900BAAD62 = {
 			isa = PBXGroup;
 			children = (
+				1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */,
 				E794154A1A0145AE003DADC9 /* Vendor */,
 				5356824318F3656900BAAD62 /* UICatalog */,
 				E7645EB51A41E6D40026678D /* Modules_UICatelog_Full Tests */,
@@ -242,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				1A6ECA601B0BE68E0083E8DD /* CoreLocation.framework */,
-				1A4339FB1AFB6C410081EE93 /* TealiumLibrary.framework */,
 				E79415571A07D7AF003DADC9 /* libsqlite3.dylib */,
 				E75FC73A19E33EEE00E8133C /* SystemConfiguration.framework */,
 				5356823D18F3656900BAAD62 /* Foundation.framework */,
@@ -330,7 +378,6 @@
 			children = (
 				E7645EB81A41E6D40026678D /* Modules_UICatelog_Full_Tests.m */,
 				E7645EB61A41E6D40026678D /* Supporting Files */,
-				E7645EBF1A41E7180026678D /* TealiumADBMobileTagBridge_Tests.m */,
 			);
 			path = "Modules_UICatelog_Full Tests";
 			sourceTree = "<group>";
@@ -384,6 +431,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1A6ECA871B0CFD270083E8DD /* PBXTargetDependency */,
 			);
 			name = Modules_UICatelog_Full;
 			productName = UICatalog;
@@ -410,12 +458,49 @@
 			mainGroup = 5356823118F3656900BAAD62;
 			productRefGroup = 5356823B18F3656900BAAD62 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1A6ECA751B0CFCDB0083E8DD /* Products */;
+					ProjectRef = 1A6ECA741B0CFCDB0083E8DD /* TealiumFrameworkGenerator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5356823918F3656900BAAD62 /* Modules_UICatelog_Full */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1A6ECA7F1B0CFCDB0083E8DD /* libTealiumLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealiumLibrary.a;
+			remoteRef = 1A6ECA7E1B0CFCDB0083E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A6ECA811B0CFCDB0083E8DD /* TealiumFrameworkGeneratorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TealiumFrameworkGeneratorTests.xctest;
+			remoteRef = 1A6ECA801B0CFCDB0083E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A6ECA831B0CFCDB0083E8DD /* libTealiumLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTealiumLibrary.a;
+			remoteRef = 1A6ECA821B0CFCDB0083E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A6ECA851B0CFCDB0083E8DD /* TealiumFrameworkGenerator_CompactTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TealiumFrameworkGenerator_CompactTests.xctest;
+			remoteRef = 1A6ECA841B0CFCDB0083E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5356823818F3656900BAAD62 /* Resources */ = {
@@ -469,6 +554,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A6ECA871B0CFD270083E8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TealiumFrameworkGenerator;
+			targetProxy = 1A6ECA861B0CFD270083E8DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3EC13AE01933D95700915353 /* Main.storyboard */ = {
@@ -573,22 +666,23 @@
 		5356827018F3656900BAAD62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICatalog/Modules_UICatelog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdobeMobileLibrary",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "UICatalog/Modules_UICatelog-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				LLVM_LTO = NO;
 				PRODUCT_NAME = Modules_UICatelog_Full;
@@ -599,22 +693,23 @@
 		5356827118F3656900BAAD62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICatalog/Modules_UICatelog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdobeMobileLibrary",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "UICatalog/Modules_UICatelog-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				LLVM_LTO = NO;
 				PRODUCT_NAME = Modules_UICatelog_Full;

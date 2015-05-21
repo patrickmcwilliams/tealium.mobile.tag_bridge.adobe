@@ -183,12 +183,13 @@ typedef NSDictionary* (^__VendorMethod)(__weak NSDictionary *data);
             NSData *configData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
             if (configData){
                 NSError *error;
-                configJSON = [NSJSONSerialization JSONObjectWithData:configData options:0 error:&error];
-                NSOutputStream *os = [[NSOutputStream alloc] initToFileAtPath:filePath append:NO];
                 
-                [os open];
-                [NSJSONSerialization writeJSONObject:configJSON toStream:os options:0 error:nil];
-                [os close];
+                configJSON = [NSJSONSerialization JSONObjectWithData:configData options:0 error:&error];
+                NSData *jsonData = [NSJSONSerialization dataWithJSONObject:configJSON options:NSJSONWritingPrettyPrinted error:&error];
+                NSString *formattedJSONString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+                
+                formattedJSONString = [formattedJSONString stringByReplacingOccurrencesOfString:@"\\/" withString:@"/"];
+                [formattedJSONString writeToFile:filePath atomically:YES encoding:NSStringEncodingConversionAllowLossy error:&error];
                 
                 [ADBMobile overrideConfigPath:filePath];
             }
@@ -737,6 +738,7 @@ NSString *const ADOBE_VENDOR_DESCRIPTION = @"Adobe Tag Bridge";
                               
                               [response send];
                           }];
+    
 }
 
 
@@ -745,7 +747,7 @@ NSString *const ADOBE_VENDOR_DESCRIPTION = @"Adobe Tag Bridge";
     self = [super init];
     
     if (self) {
-        _adobeDispatchQueue = dispatch_queue_create("com.tealium.tagbridge.adobe", NULL);
+        self.adobeDispatchQueue = dispatch_queue_create("com.tealium.tagbridge.adobe", NULL);
         
         // Add methods here
         _adobeMethodStrings = [[NSMutableDictionary alloc] init];

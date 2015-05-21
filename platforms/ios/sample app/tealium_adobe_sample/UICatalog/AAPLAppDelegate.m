@@ -22,10 +22,15 @@
     
     splitViewController.delegate = self;
     splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
-
-    [Tealium initSharedInstance:@"tealiummobile" profile:@"demo" target:@"dev" options:TLDisplayVerboseLogs];
     
-    [[TealiumADBMobileTagBridge sharedInstance] addRemoteCommandHandlers];
+    __block NSString*(^adobeInit)(void) = ^{
+        [[TealiumADBMobileTagBridge sharedInstance] addRemoteCommandHandlers];
+        return @"true";
+    };
+    
+    [Tealium initSharedInstance:@"tealium-patrick" profile:@"main" target:@"dev" options:TLDisplayVerboseLogs globalCustomData:@{@"adobe_sdk_ready":adobeInit()}];
+    
+    
     
     return YES;
 }
